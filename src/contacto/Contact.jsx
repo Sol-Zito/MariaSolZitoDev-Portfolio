@@ -6,7 +6,7 @@ import { Wpp } from "../utils/IconWpp";
 
 const Contact = () => {
   return (
-    <div id="contact" className="border bg-cardB m-auto p-2">
+    <div id="contact" className=" w-4/5 border bg-cardB m-auto p-2">
       <Title name="Contact" />
       <div className="bg-background border text-center items-center m-auto py-4">
         <div className="flex flex-cols gap-4 justify-center m-auto pb-2">
