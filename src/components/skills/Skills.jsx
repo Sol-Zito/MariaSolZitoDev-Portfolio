@@ -104,17 +104,17 @@ export const Skills = () => {
   ]);
 
   return (
-    <div id="skills" className="mx-2 m-auto bg-cardB p-2">
+    <div className="mx-2 m-auto bg-cardB p-2">
       <Title name="Hard Skills" />
       <div className="bg-background grid md:grid-cols-3 grid-flow-rows gap-2 p-2 shadow-lg">
-        {dataHard.map((ele) => (
+        {dataHard.map((dataSkill) => (
           <>
-            <ul className="uppercase border p-2">
-              {ele.area}:
-              {ele.tools.map((ele) => (
-                <p className="flex gap-2">
-                  {ele.icon ? <ele.icon /> : "◾"}
-                  <li>{ele.skill}</li>
+            <ul className="uppercase border p-2 hover:scale-105 hover:bg-cardB hover:text-white border-2">
+              {dataSkill.area}:
+              {dataSkill.tools.map((tool) => (
+                <p className="flex gap-2" key={tool.id}>
+                  {tool.icon ? <tool.icon /> : "◾"}
+                  <li key={tool.id}>{tool.skill}</li>
                 </p>
               ))}
             </ul>
@@ -124,7 +124,7 @@ export const Skills = () => {
       <Title name="Soft Skills" />
       <ul className="bg-background grid md:grid-cols-3 p-2 shadow-lg">
         {dataSoft.map((ele) => (
-          <li>🤝{ele}</li>
+          <li key={ele}>🤝{ele}</li>
         ))}
       </ul>
     </div>
