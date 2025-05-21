@@ -6,7 +6,7 @@ import { Wpp } from "../utils/IconWpp";
 
 const Contact = () => {
   return (
-    <div id="contact" className="bg-cardB w-5/6 m-auto p-4">
+    <div className="bg-cardB w-5/6 m-auto p-4">
       <Title name="Contact" />
       <div className="bg-background text-center items-center m-auto p-2">
         <p>
@@ -30,7 +30,7 @@ const Contact = () => {
               target="_blank"
               className="hidden md:flex"
             >
-              : //www.linkedin.com/in/solzito1998
+              : www.linkedin.com/in/solzito1998
             </a>
           </p>
           <p className="flex">
@@ -40,7 +40,7 @@ const Contact = () => {
               target="_blank"
               className="hidden md:flex"
             >
-              : //github.com/Sol-Zito
+              : github.com/Sol-Zito
             </a>{" "}
           </p>
           <p className="flex">
