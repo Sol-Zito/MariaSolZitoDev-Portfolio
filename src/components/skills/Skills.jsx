@@ -104,7 +104,7 @@ export const Skills = () => {
   ]);
 
   return (
-    <div className="mx-2 m-auto bg-cardB p-2">
+    <div id="skills" className="mx-2 m-auto bg-cardB p-2">
       <Title name="Hard Skills" />
       <div className="bg-background grid md:grid-cols-3 grid-flow-rows gap-2 p-2 shadow-lg">
         {dataHard.map((dataSkill) => (
